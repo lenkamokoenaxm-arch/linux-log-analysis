@@ -15,7 +15,7 @@ grep "fail" auth.log
 
 This command searches for log entries containing the word `fail`, helping me identify unsuccessful login attempts.
 
-**Screenshot 1:** Insert a screenshot showing the command and its output.
+**Screenshot 1:![Failed login attempts](screenshots/01-failed-logins.png)
 
 ### Findings
 After reviewing the authentication log entries, I identified **SSH (Secure Shell)** as the service targeted by the attacker.
