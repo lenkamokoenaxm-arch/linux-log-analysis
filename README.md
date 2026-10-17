@@ -19,11 +19,11 @@ This command searches for log entries containing the word `fail`, helping me ide
 [Screenshots/Failed Login Attempts.png](https://github.com/lenkamokoenaxm-arch/linux-log-analysis/blob/abf41a01c3aa01df959a4b86e1775a4ecc6e22e5/Screenshots/Failed%20Login%20Attempts.png)
 
 ### Findings
-After reviewing the authentication log entries, I identified **SSH (Secure Shell)** as the service targeted by the attacker.
+The investigation identified SSH (Secure Shell) as the suspected service of interest based on the sshd entries found in auth.log. The logs showed errors involving port 22, which is commonly used by SSH. However, these errors do not confirm that the attacker successfully gained access through SSH. Further authentication log evidence would be required to confirm successful access..
 
 SSH allows users to connect to and manage remote systems. Attackers may target this service by attempting to guess passwords or use stolen credentials.
 
-**Screenshot 2:** https://github.com/lenkamokoenaxm-arch/linux-log-analysis/blob/abf41a01c3aa01df959a4b86e1775a4ecc6e22e5/Screenshots/ssh-evidence.png
+**Screenshot 2:** [Screenshots/ssh-evidence.png](https://github.com/lenkamokoenaxm-arch/linux-log-analysis/blob/4dcca05ca615605b5e211af4e6667e88af017bc9/Screenshots/ssh-evidence.png)
 
 ### Conclusion
 By analyzing `auth.log` with `grep`, I identified SSH as the service associated with the attack activity. This exercise demonstrated how Linux command-line tools can help investigate suspicious login attempts.
