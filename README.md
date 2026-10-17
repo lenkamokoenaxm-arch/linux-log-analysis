@@ -23,7 +23,7 @@ After reviewing the authentication log entries, I identified **SSH (Secure Shell
 
 SSH allows users to connect to and manage remote systems. Attackers may target this service by attempting to guess passwords or use stolen credentials.
 
-**Screenshot 2:** ![SSH-Evidence]([screenshots/02-ssh-evidence.png)](https://github.com/lenkamokoenaxm-arch/linux-log-analysis/blob/main/Screenshots/ssh-evidence.png)
+**Screenshot 2:** https://github.com/lenkamokoenaxm-arch/linux-log-analysis/blob/abf41a01c3aa01df959a4b86e1775a4ecc6e22e5/Screenshots/ssh-evidence.png
 
 ### Conclusion
 By analyzing `auth.log` with `grep`, I identified SSH as the service associated with the attack activity. This exercise demonstrated how Linux command-line tools can help investigate suspicious login attempts.
